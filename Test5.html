@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+    main{
+        width: 400px;
+        height: 300px;
+        border: 2px solid black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        /*overflow: hidden;*/
+        overflow-x:hidden;
+        overflow-y:hidden;
+
+    }
+   main>section{
+       width: 1600px;
+       height: 300px;
+       border: 1px solid black;
+       display: flex;
+       animation-name: my-animation;
+       animation-duration: 5s;
+       animation-iteration-count: infinite;
+   }
+
+    main>section>div{
+        width: 400px;
+        height: 300px;
+        border: 1px solid #c4b762;
+
+    }
+
+    main>section>div:nth-child(1){
+       background-image: url("style/27.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+
+    main>section>div:nth-child(2){
+        background-image: url("style/2424.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+    main>section>div:nth-child(3){
+        background-image: url("style/4345.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }    main>section>div:nth-child(4){
+             background-image: url("style/2188.jpg");
+             background-size: cover;
+             background-repeat: no-repeat;
+
+
+         }
+         @keyframes my-animation {
+             0%,20%{
+                 transform: translateX(-0%);
+             }
+             25%,45%{
+                 transform: translateX(-25%);
+             }
+             50%,70%{
+                 transform: translateX(-50%);
+             }
+             75%,100%{
+                 transform: translateX(-75%);
+             }
+             /*100%{*/
+             /*    transform: translateX(-100%);*/
+             /* }*/
+
+
+         }
+
+
+  </style>
+</head>
+<body>
+<main>
+<div></div>
+<section>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</section>
+</main>
+</body>
+</html>

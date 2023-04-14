@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text 02</title>
+  <style>
+    body{
+      background-color: blue;
+    }
+    /*#mainCircle {*/
+    /*  width: 10vw;*/
+    /*  height: 10vw;*/
+    /*  border-radius: 100%;*/
+    /*  top: 0;*/
+    /*  left: 0;*/
+    /*  bottom: 0;*/
+    /*  right: 0;*/
+    /*  margin: auto;*/
+    /*  border: 7px solid #ffffff;*/
+    /*  position: fixed;*/
+    /*}*/
+    /*#mainCircle>div:last-child{*/
+    /*  width: 10vw;*/
+    /*  height: 10vw;*/
+    /*  border-radius: 100%;*/
+    /*  background-color:gray;*/
+    /*  text-align: center;*/
+    /*}*/
+    section{
+      width: 200px;
+      aspect-ratio: 1/1;
+      background-color: gray;
+      /*border: 10px solid white;*/
+      border-top-color: #ff253a;
+      border-radius: 100%;
+      position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+
+
+    }
+
+    section>h1{
+      width: fit-content;
+      height: fit-content;
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    section:hover:before{
+      transform: rotate(360deg);
+      transition-duration: 3s;
+
+
+ }
+
+    /*Sudo element*/
+    section::before{
+      content:"";
+      /*width: 200px;*/
+      /*aspect-ratio: 1/1;*/
+      /*background-color: gray;*/
+      margin: auto;border: 10px solid white;
+      border-top-color: red;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+
+
+    }
+
+
+  </style>
+
+</head>
+<body>
+<section>
+<h1>RWAD</h1>
+</section>
+</body>
+</html>

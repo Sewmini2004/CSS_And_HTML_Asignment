@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #main{
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      border: 2px solid #34289e;
+      position: absolute;
+      z-index: 10;
+      animation-name: my-animation;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+ }
+
+    @keyframes my-animation {
+     from{
+
+       width: 30px;
+       height: 30px;
+
+      }
+      to{
+
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+      }
+
+    }
+  </style>
+</head>
+<body>
+<div id="main">
+  <div></div>
+</div>
+
+
+</body>
+</html>
